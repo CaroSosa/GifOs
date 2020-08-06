@@ -610,7 +610,7 @@ header {
   top: 220px;
   left: 92px;
   width: 1200px;
-  height: 950px;
+  height: fit-content;
   overflow: hidden;
   display: grid;
   grid-gap: 10px;
