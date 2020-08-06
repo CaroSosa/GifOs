@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifOs</title>
+    <link rel="stylesheet" href="styles/estilos.css" type="text/css" >
+</head>
+<body>
+    <header>
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <div class="inicio">
+        <a href="/index.html">
+            <img class="logo-claro" src="images/gifOF_logo.png" alt="logo-gifOs">
+        </a>
+        <a href="/grabarGifOs.html">
+            <div class="boton-crear">
+                <p>Crear Guifos</p>
+            </div>
+        </a>
+        <div class="boton-elegir-tema">
+            <div class="texto-tema">
+                <p>Elegir tema</p>
+            </div>
+            <div class="boton-tema-anexo">
+                <img id="dropdown" src="/images/dropdown.svg" alt="dropdown">
+            </div>
+        </div>
+        <div class="menu-estilos">
+            <div id="sailor-day" class="sailor-day"><p>Sailor Day</p></div>
+            <div id="sailor-night" class="sailor-night"><p>Sailor Night</p></div>
+        </div>
+        <div id="mis-guifos" class="mis-guifos"><p> Mis Guifos</p></div>
+    </div>
+    
+    <div class="cuadro-buscar">
+        <div class="cuadro-buscar-degradado"><p>Buscar</p></div>
+        <input class="ingresar-busqueda" type="search" id="search" name="tags" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+        <button disabled class="boton-buscar"><img id="lupa" src="/images/lupa_inactive.svg" alt="lupa"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buscar</button>
+    </div>
+    <div class="contenedor-busqueda-previa"></div>
+    <div class="posibles-result">
+        <button class="result-sugerido"></button> 
+        <button class="result-sugerido-2"></button> 
+        <button class="result-sugerido-3"></button>        
+    </div>
+    <div class="grid-resultados"></div>
+    <div class="sugerencias">
+        <p>Hoy te sugerimos:</p>
+    </div>
+    <div class="grid-sugerencias">
+    </div>
+    <div class="texto-tendencias">
+        <p>Tendencias</p>
+    </div>
+    <div id="grid-tendencias" class="grid-tendencias"></div>
+    <div class="titulo-mis-guifos" >
+        <p>Mis guifos</p>
+    </div>
+    <div id="grid-mis-guifos" class="grid-mis-guifos"></div>
+    <div class="cartel-oops">
+        <p>Oops parece que no has subido ningun Guifo todavia, haz click en "Crear Guifos" para comenzar.</p>
+    </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

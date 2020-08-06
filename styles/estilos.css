@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+body.modoClaro {
+  background-color: #FFF4FD;
+  transition: .3s ease all; }
+body.modoOscuro {
+  background-color: #110038; }
+
+header {
+  width: 1438px;
+  height: 23px;
+  box-shadow: 0 1px 0 0 #110038;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); }
+  header p {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0; }
+  body.modoOscuro header {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+
+.logo-claro {
+  position: relative;
+  top: 39px;
+  left: 91px; }
+
+.boton-crear {
+  position: absolute;
+  top: 68px;
+  left: 879px;
+  height: 36px;
+  width: 144px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+  .boton-crear p {
+    position: absolute;
+    top: 9px;
+    left: 28.5px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #110038;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px; }
+  .boton-crear:hover {
+    background-color: #E6BBE2;
+    outline: 1px solid #110038;
+    outline-offset: -5px;
+    outline-style: dotted; }
+  body.modoOscuro .boton-crear {
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+    body.modoOscuro .boton-crear P {
+      color: #FFFFFF; }
+    body.modoOscuro .boton-crear:hover {
+      background: #CE36DB; }
+
+.menu-estilos {
+  position: relative;
+  display: none;
+  width: 168px;
+  height: 102px;
+  top: 28px;
+  left: 1034px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  .menu-estilos .sailor-day {
+    position: relative;
+    width: 150px;
+    height: 36px;
+    top: 15px;
+    left: 10px;
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+    .menu-estilos .sailor-day p {
+      position: absolute;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 16px;
+      text-align: left;
+      top: 7px;
+      left: 16px;
+      color: #110038;
+      letter-spacing: 0;
+      line-height: 22px; }
+  .menu-estilos .sailor-night {
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    top: 56px;
+    left: 10px;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+    .menu-estilos .sailor-night p {
+      position: absolute;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 16px;
+      text-align: left;
+      top: 7px;
+      left: 16px;
+      color: #110038;
+      letter-spacing: 0;
+      line-height: 22px; }
+      .menu-estilos .sailor-night p::before {
+        content: "_";
+        position: absolute;
+        top: 2px;
+        margin-left: 1px; }
+
+.boton-elegir-tema {
+  position: absolute;
+  top: 68px;
+  left: 1039px;
+  height: 38px;
+  width: 167px;
+  background: #F7C9F3; }
+  .boton-elegir-tema .texto-tema {
+    position: absolute;
+    width: 131px;
+    height: 36px;
+    top: 0;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+    .boton-elegir-tema .texto-tema p {
+      position: absolute;
+      top: 9px;
+      left: 22px;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 16px;
+      color: #110038;
+      letter-spacing: 0;
+      line-height: 18px; }
+  .boton-elegir-tema .boton-tema-anexo {
+    position: absolute;
+    top: 0;
+    left: 131px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+    .boton-elegir-tema .boton-tema-anexo img {
+      position: absolute;
+      top: 13px;
+      left: 13px; }
+  .boton-elegir-tema:hover {
+    background-color: #E6BBE2; }
+    .boton-elegir-tema:hover .texto-tema, .boton-elegir-tema:hover .boton-tema-anexo {
+      outline: 1px solid #110038;
+      outline-offset: -5px;
+      outline-style: dotted; }
+  body.modoOscuro .boton-elegir-tema {
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+    body.modoOscuro .boton-elegir-tema P {
+      color: #FFFFFF; }
+    body.modoOscuro .boton-elegir-tema:hover {
+      background: #CE36DB; }
+
+.mis-guifos {
+  position: absolute;
+  top: 68px;
+  left: 1223.5px;
+  width: 95px;
+  height: 32px;
+  border: 1px;
+  border-color: #110038;
+  border-style: none; }
+  .mis-guifos p {
+    position: absolute;
+    top: 7.5px;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 18px; }
+  .mis-guifos::before {
+    content: "_";
+    position: absolute;
+    top: 7.5px;
+    margin-left: 1px; }
+  .mis-guifos:hover {
+    border-style: dotted; }
+  .mis-guifos:active {
+    border-style: none; }
+    .mis-guifos:active a {
+      color: #1100386b; }
+  body.modoOscuro .mis-guifos {
+    color: #FFFFFF;
+    border-color: #FFFFFF; }
+    body.modoOscuro .mis-guifos p {
+      color: #FFFFFF; }
+    body.modoOscuro .mis-guifos:active {
+      border-style: none; }
+      body.modoOscuro .mis-guifos:active a {
+        color: #fd97db6b; }
+
+.menu-estilos-show {
+  position: relative;
+  width: 168px;
+  height: 102px;
+  top: 31px;
+  left: 1038px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  body.modoOscuro .menu-estilos-show {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF; }
+  .menu-estilos-show .sailor-day {
+    position: relative;
+    width: 150px;
+    height: 36px;
+    top: 15px;
+    left: 10px;
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+    body.modoOscuro .menu-estilos-show .sailor-day {
+      background: #CCCCCC;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+      body.modoOscuro .menu-estilos-show .sailor-day p {
+        color: #110038; }
+    .menu-estilos-show .sailor-day p {
+      position: absolute;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 16px;
+      text-align: left;
+      top: 7px;
+      left: 16px;
+      color: #110038;
+      letter-spacing: 0;
+      line-height: 22px; }
+  .menu-estilos-show .sailor-night {
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    top: 56px;
+    left: 10px;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+    body.modoOscuro .menu-estilos-show .sailor-night {
+      background: #2E32FB;
+      border: 1px solid #33358F;
+      box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+      body.modoOscuro .menu-estilos-show .sailor-night p {
+        color: #FFFFFF; }
+    .menu-estilos-show .sailor-night p {
+      position: absolute;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 16px;
+      text-align: left;
+      top: 7px;
+      left: 16px;
+      color: #110038;
+      letter-spacing: 0;
+      line-height: 22px; }
+      .menu-estilos-show .sailor-night p::before {
+        content: "_";
+        position: absolute;
+        top: 2px;
+        margin-left: 1px; }
+
+.titulo-mis-guifos {
+  display: none;
+  position: relative;
+  top: 74px;
+  width: 1200px;
+  height: 32px;
+  left: 100px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D; }
+  .titulo-mis-guifos p {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0; }
+
+.grid-mis-guifos {
+  position: relative;
+  top: 84px;
+  left: 100px;
+  width: 1200px;
+  height: 1200px;
+  display: none; }
+  .grid-mis-guifos img {
+    z-index: 2;
+    margin: 8px; }
+
+.cartel-oops {
+  display: none;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 800px;
+  margin: auto; }
+  .cartel-oops p {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 26px;
+    color: #110038;
+    font-weight: bold;
+    text-align: center; }
+    body.modoOscuro .cartel-oops p {
+      color: #FFFFFF; }
+
+.cuadro-buscar {
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 1200px;
+  height: 99px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  z-index: 2; }
+  .cuadro-buscar .cuadro-buscar-degradado {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 1194px;
+    height: 24px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); }
+    .cuadro-buscar .cuadro-buscar-degradado p {
+      position: absolute;
+      top: 3px;
+      left: 6px;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      font-weight: bold; }
+  .cuadro-buscar .ingresar-busqueda {
+    position: relative;
+    top: 39px;
+    left: 15px;
+    width: 1025px;
+    height: 48px;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000; }
+  .cuadro-buscar .boton-buscar {
+    position: absolute;
+    width: 102px;
+    height: 36px;
+    left: 1080px;
+    top: 45px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038; }
+    .cuadro-buscar .boton-buscar img {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      z-index: 10;
+      color: #110038; }
+    .cuadro-buscar .boton-buscar:disabled {
+      background: #E6E6E6;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+      color: #B4B4B4; }
+    .cuadro-buscar .boton-buscar:active {
+      outline: 1px solid #110038;
+      outline-offset: -5px;
+      outline-style: dotted;
+      color: #110038; }
+  body.modoOscuro .cuadro-buscar {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF; }
+    body.modoOscuro .cuadro-buscar .cuadro-buscar-degradado {
+      background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+    body.modoOscuro .cuadro-buscar .boton-buscar {
+      background: #EE3EFE;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+      color: #FFFFFF; }
+      body.modoOscuro .cuadro-buscar .boton-buscar:disabled {
+        background: #B4B4B4;
+        border: 1px solid #808080;
+        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+        color: #8F8F8F; }
+      body.modoOscuro .cuadro-buscar .boton-buscar:active {
+        outline: 1px solid #110038;
+        outline-offset: -5px;
+        outline-style: dotted;
+        background: #CE36DB;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+
+.posibles-result {
+  position: relative;
+  display: none;
+  width: 1200px;
+  height: 160px;
+  left: 100px;
+  top: 50px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  z-index: 2; }
+  .posibles-result .result-sugerido {
+    position: absolute;
+    width: 1055px;
+    height: 34px;
+    top: 17px;
+    left: 16px;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left; }
+    .posibles-result .result-sugerido:hover {
+      background: #DBDBDB;
+      outline: 1px solid #110038;
+      outline-offset: -5px;
+      outline-style: dotted; }
+  .posibles-result .result-sugerido-2 {
+    position: absolute;
+    width: 1055px;
+    height: 34px;
+    top: 63px;
+    left: 16px;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left; }
+    .posibles-result .result-sugerido-2:hover {
+      background: #DBDBDB;
+      outline: 1px solid #110038;
+      outline-offset: -5px;
+      outline-style: dotted; }
+  .posibles-result .result-sugerido-3 {
+    position: absolute;
+    width: 1055px;
+    height: 34px;
+    top: 108px;
+    left: 16px;
+    background: #F0F0F0;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: left; }
+    .posibles-result .result-sugerido-3:hover {
+      background: #DBDBDB;
+      outline: 1px solid #110038;
+      outline-offset: -5px;
+      outline-style: dotted; }
+  body.modoOscuro .posibles-result {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+    body.modoOscuro .posibles-result .result-sugerido {
+      background: #CCCCCC;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+    body.modoOscuro .posibles-result .result-sugerido-2 {
+      background: #CCCCCC;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+    body.modoOscuro .posibles-result .result-sugerido-3 {
+      background: #CCCCCC;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+
+.sugerencias {
+  position: relative;
+  width: 1200px;
+  height: 32px;
+  top: 98px;
+  left: 100px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D; }
+  .sugerencias p {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0; }
+
+.grid-sugerencias {
+  position: relative;
+  top: 140px;
+  left: 100px;
+  width: 1200px;
+  height: 313px;
+  display: grid;
+  grid-template-columns: 288px 288px 288px 288px;
+  justify-content: space-between;
+  overflow: hidden; }
+
+.div-sugerencia {
+  position: relative;
+  height: 313px;
+  width: 288px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  .div-sugerencia .gif-sugerencia {
+    position: absolute;
+    top: 29px;
+    left: 4px;
+    width: 280px;
+    height: 280px; }
+  .div-sugerencia .boton-ver-mas {
+    position: relative;
+    top: 266px;
+    left: 18px;
+    width: 81px;
+    height: 34px;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF; }
+    .div-sugerencia .boton-ver-mas p {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 18px; }
+  .div-sugerencia:hover .boton-ver-mas {
+    outline: 1px solid #110038;
+    outline-offset: -4px;
+    outline-style: dotted; }
+  .div-sugerencia:hover .gif-sugerencia {
+    outline: 1px solid #110038;
+    outline-offset: -1px;
+    outline-style: dotted; }
+
+.div-titulo-gif {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 280px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  z-index: 2; }
+  .div-titulo-gif p {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: bold; }
+  .div-titulo-gif .boton-x {
+    position: relative;
+    top: 4px;
+    left: 260px; }
+  body.modoClaro .div-titulo-gif {
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); }
+  body.modoOscuro .div-titulo-gif {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+
+.texto-tendencias {
+  position: relative;
+  width: 1200px;
+  height: 32px;
+  top: 200px;
+  left: 100px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D; }
+  .texto-tendencias p {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0; }
+
+.grid-tendencias {
+  position: relative;
+  top: 220px;
+  left: 92px;
+  width: 1200px;
+  height: 950px;
+  overflow: hidden;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 298px 298px 298px 298px;
+  grid-auto-flow: row dense; }
+  .grid-tendencias .div-tendencia {
+    display: inline-block;
+    height: 304px;
+    width: fit-content;
+    outline: 4px;
+    outline-offset: -4px;
+    outline-color: #FFF4FD;
+    overflow: hidden; }
+    .grid-tendencias .div-tendencia img {
+      width: 100%; }
+    .grid-tendencias .div-tendencia .div-hashtags {
+      display: none;
+      position: relative;
+      top: -24px;
+      left: 1%;
+      height: 24px;
+      width: 98%;
+      background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+      z-index: 2; }
+      .grid-tendencias .div-tendencia .div-hashtags p {
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: left; }
+      body.modoClaro .grid-tendencias .div-tendencia .div-hashtags {
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); }
+      body.modoOscuro .grid-tendencias .div-tendencia .div-hashtags {
+        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+    .grid-tendencias .div-tendencia:hover {
+      outline-color: #E6E6E6;
+      outline-style: solid; }
+      .grid-tendencias .div-tendencia:hover .div-hashtags {
+        display: block; }
+
+.grid-resultados {
+  position: absolute;
+  top: 391px;
+  display: none;
+  width: 1220px;
+  height: 1025px;
+  left: 92px;
+  background: #FFF4FD;
+  z-index: 2;
+  overflow: hidden;
+  text-align: center; }
+  .grid-resultados .div-resultado {
+    display: inline-block;
+    height: 238px;
+    margin: 8px;
+    outline: 4px;
+    outline-offset: -4px;
+    outline-color: #FFF4FD;
+    overflow: hidden; }
+    .grid-resultados .div-resultado .hashtags-resultado {
+      display: none;
+      position: relative;
+      top: -24px;
+      left: 1%;
+      height: 24px;
+      width: 98%;
+      background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+      z-index: 2; }
+      .grid-resultados .div-resultado .hashtags-resultado p {
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: left; }
+      body.modoClaro .grid-resultados .div-resultado .hashtags-resultado {
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); }
+      body.modoOscuro .grid-resultados .div-resultado .hashtags-resultado {
+        background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+    .grid-resultados .div-resultado:hover {
+      outline-color: #E6E6E6;
+      outline-style: solid; }
+      .grid-resultados .div-resultado:hover .hashtags-resultado {
+        display: block; }
+  body.modoOscuro .grid-resultados {
+    background: #110038; }
+  .grid-resultados .gif-resultado {
+    margin: 8px; }
+
+.contenedor-busqueda-previa {
+  position: absolute;
+  top: 234px;
+  left: 92px;
+  width: 1200px;
+  height: 25px; }
+  .contenedor-busqueda-previa .busqueda-previa {
+    position: relative;
+    width: 100px;
+    height: 34px;
+    left: 8px;
+    margin: 4px;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px; }
+
+/*# sourceMappingURL=estilos.css.map */

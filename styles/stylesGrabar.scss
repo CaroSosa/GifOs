@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    overflow-x: hidden;
+    width: 1440px;
+    &.modoClaro{
+        background-color: #FFF4FD;
+        transition: .3s ease all;
+        }
+    &.modoOscuro{
+        background-color: #110038;
+    }
+    
+
+}
+.flecha{
+    position: absolute;
+    top: 79px;
+    left: 60px;
+}
+.logo{
+    position: absolute;
+    top: 59px;
+    left: 91px;
+}
+.header{
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    box-shadow: 0 1px 0 0 #110038;
+    p{  
+        position: relative;
+        left: 7px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+}
+.create-box{
+    position: relative;
+    height: 386px;
+    width: 684px;
+    top: 198px;
+    left: 398px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    body.modoOscuro & {
+        background: #B4B4B4;
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    }
+    .titulo-crear{
+        position: relative;
+        width: 678px; 
+        height: 24px;
+        left: 3px;
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        p{
+            position: absolute;
+            top: 4.4px;
+            left: 7px;
+            font-weight: bolder;;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;  
+        };
+        body.modoOscuro & {
+            background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+        }
+        
+        
+    }
+    .imagen-ventana{
+        position: relative;
+        top: 32.6px;
+        left: 25px;
+    }
+    .texto-crear{
+        position: relative;
+        top: 0px;
+        left: 73px;
+        height: 190px;
+        width: 518px;
+        h2{
+            position: absolute;
+            top: 0;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            font-weight: bolder;
+        }
+        p{
+            position: relative;
+            top: 39px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 14px;
+            color: #110038;
+            letter-spacing: 0; 
+        }
+    }
+    .boton-cancelar{
+        position: relative;
+        width: 144px;
+        height: 36px;
+        left: 344px;
+        top: 78px;
+        background: #FFF4FD;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        p{  
+            position: absolute;
+            top: 9px;
+            left: 39.5px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 18px;
+        }
+
+    }
+    .boton-comenzar{
+        position: relative;
+        width: 144px;
+        height: 36px;
+        left: 504px;
+        top: 41px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        p{
+            position: absolute;
+            top: 9px;
+            left: 35px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 18px;
+        }
+        body.modoOscuro &{
+            background: #EE3EFE;
+            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+            P{
+                color: #FFFFFF;
+            }
+            &:hover{
+                background: #CE36DB;
+            }
+        }   
+    }
+}
+.title-mis-guifos{
+    position: relative;
+    top: 258px;
+    left: 100px;
+    width: 1200px;
+    height: 32px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    p{  
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 14px;
+        color: #110038;
+        letter-spacing: 0;
+    }
+}
+.grid-mis-guifos{
+    position: relative;
+    top: 280px;
+    left: 100px;
+    width: 1200px;
+    img{
+        margin: 8px;
+    }
+    .cartel-oops{
+        display: none;
+        position: relative;
+        top:200px;
+        left: 0px;
+        width: 800px;
+        margin: auto;
+        z-index: 2;
+        p{
+            font-family: 'Chakra Petch', sans-serif;;
+            font-size: 26px;
+            color: #110038;
+            font-weight: bold;
+            text-align: center;
+            body.modoOscuro &{
+                color: #FFFFFF;
+            }
+        }
+        
+    }
+
+}
+.video-box{
+    position: relative;
+    display: none;
+    width: 860px;
+    height: 548px;
+    top: 208px;
+    left: 265px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    body.modoOscuro & {
+        background: #B4B4B4;
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    }
+    .titulo-cuadro-video{
+        position: relative;
+        top: 0;
+        left: 2px;
+        width: 854px;
+        height: 24px;
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        body.modoOscuro & {
+            background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+        }
+        p{  
+            position: absolute;
+            top:3px;
+            left: 7px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+        }
+        .btn-x{
+            position: absolute;
+            top: 5px;
+            left: 831px;
+        }
+    }
+    .viewport{
+        position: relative;
+        top: 11px;
+        left: 8px;
+        width: 832px;
+        height: 440px;
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+        overflow: hidden;
+        .live-video{
+            z-index: 2; 
+        }
+    }
+    .btn-capture{
+        position: relative;
+        width: 180px;
+        height: 36px;
+        top: 24px;
+        left: 663px;
+        background: #F7C9F3;
+        body.modoOscuro &{
+            background: #EE3EFE;
+            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+            P{
+                color: #FFFFFF;
+            }
+            &:hover{
+                background: #CE36DB;
+            }
+        }   
+        .div-camera{
+            width: 36px;
+            height: 36px;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            img{
+                position: absolute;
+                top: 9px;
+                left: 10.5px;
+            }
+        }
+        .div-capture{
+            position: relative;
+            left: 36px;
+            top: -38px;
+            height: 36px;
+            width: 144px;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            p{  
+                position: absolute;
+                top: 9px;
+                left: 39.5px;
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 16px;
+                color: #110038;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 18px;
+            }
+        }
+    }
+    .btn-capture-clicked{
+        display: none;
+        position: relative;
+        width: 180px;
+        height: 36px;
+        top: 24px;
+        left: 663px;
+        background: #FF6161;
+        .div-recording{
+            width: 36px;
+            height: 36px;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            img{
+                position: absolute;
+                top: 9px;
+                left: 10.5px;
+            }
+        }
+        .div-listo{
+            position: relative;
+            left: 36px;
+            top: -38px;
+            height: 36px;
+            width: 144px;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            p{  
+                position: absolute;
+                top: 9px;
+                left: 53.5px;
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 16px;
+                color: #110038;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 18px;
+            }
+        }
+    }
+    .btn-repetir{
+        display: none;
+        position: relative;
+        top: 26px;
+        left: 542px;
+        width: 144px;
+        height: 36px;
+        background: #FFF4FD;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        body.modoOscuro &{
+            background: #110038;
+            border: 1px solid #B4B4B4;
+            box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+            P{
+                color: #FFFFFF;
+            }
+            &:hover{
+                outline: 1px solid #FFFFFF;
+                outline-offset: -3px;
+                outline-style: dotted;
+            }
+        }   
+        p{  
+            position: absolute;
+            top: 9px;
+            left: 13.5px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 18px;
+            font-weight: bold;
+        }
+    }
+    .btn-subir{
+        display: none;
+        position: relative;
+        top: -12px;
+        left: 700px;
+        width: 144px;
+        height: 36px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;  
+        body.modoOscuro &{
+            background: #EE3EFE;
+            box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+            P{
+                color: #FFFFFF;
+            }
+            &:hover{
+                background: #CE36DB;
+            }
+        }   
+        p{
+            position: absolute;
+            top: 9px;
+            left: 31.5px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 18px;
+            font-weight: bold;
+        }
+    }
+}
+.div-subiendo{
+    display: none;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    width: 838px;
+    height: 440px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    img{
+        position: absolute;
+        top: 139px;
+        left: 398px;
+    }
+    h3{
+        position: absolute;
+        top: 195px;
+        left: 314.5px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 16px;
+        color: #110038;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+    }
+    p{
+        position: absolute;
+        top: 288px;
+        left: 302.5px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 12px;
+        color: rgba(17,0,56,0.64);
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 14px;
+    }
+}
+.btn-cancelar{
+    display: none;
+    position: relative;
+    top: 25px;
+    left: 702px;
+    width: 144px;
+    height: 32px;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    body.modoOscuro &{
+        background: #EE3EFE;
+        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+        P{
+            color: #FFFFFF;
+        }
+        &:hover{
+            background: #CE36DB;
+        }
+    }   
+    p{
+        position: absolute;
+        top: 7px;
+        left: 39.5px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 16px;
+        color: #110038;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 18px;
+    }
+}
+.cartel-exito{
+    display: none;
+    position:relative;
+    width: 721px;
+    height: 391px;
+    top: 184px;
+    left: 360px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    body.modoOscuro & {
+        background: #B4B4B4;
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    }
+    .titulo-exito{
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 715px;
+        height: 24px;
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        p{
+            position: absolute;
+            top: 3.4px;
+            left: 7px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+        }
+        a{
+            position: absolute;
+            top: 4px;
+            left: 695px;
+        }
+    }
+    h2{
+        position: absolute;
+        top: 76px;
+        left: 419px;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 16px;
+        color: #110038;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .resultado-guifo{
+        position: absolute;
+        top: 56px;
+        left: 27px;
+        width: 365px;
+        height: 191px;
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    }
+    .boton-copiar-url{
+        position: absolute;
+        top: 114px;
+        left: 419px;
+        width: 256px;
+        height: 36px;
+        background: #FFF4FD;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        
+        p{
+            position: absolute;
+            top: 9px;
+            left: 56.5px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 18px;
+        }
+    }
+    .boton-descargar{
+        position: absolute;
+        top: 164px;
+        left: 419px;
+        width: 256px;
+        height: 36px;
+        background: #FFF4FD;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        p{
+            position: absolute;
+            top: 9px;
+            left: 68.5px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            letter-spacing: 0;
+            line-height: 18px;
+        } 
+    }
+    .boton-listo{
+        position: absolute;
+        top: 311px;
+        left: 531px;
+        width: 144px;
+        height: 36px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        p{   
+            position: absolute;
+            top: 9px;
+            left: 53.3px;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 16px;
+            color: #110038;
+            line-height: 18px;
+        }
+    }
+}

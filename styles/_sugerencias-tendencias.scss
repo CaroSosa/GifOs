@@ -1,0 +1,182 @@
+.sugerencias{
+    position: relative;
+    width: 1200px;
+    height: 32px;
+    top: 98px;
+    left: 100px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    p{
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        font-family: $fuente;
+        font-size: 14px;
+        color: #110038;
+        letter-spacing: 0;
+    }
+}
+.grid-sugerencias{
+    position: relative;
+    top: 140px;
+    left: 100px;
+    width: 1200px;
+    height: 313px;
+    display: grid;
+    grid-template-columns: 288px 288px 288px 288px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.div-sugerencia{
+    position: relative;
+    height: 313px;
+    width: 288px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    .gif-sugerencia{
+        position: absolute;
+        top: 29px;
+        left: 4px;
+        width: 280px;
+        height: 280px;
+    }
+    .boton-ver-mas{
+        position: relative;
+        top: 266px;
+        left: 18px;
+        width: 81px;
+        height: 34px;
+        background: #4180F6;
+        border: 1px solid #4C2F99;
+        box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+        p{  
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            font-family: $fuente;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 18px;
+        }
+    }
+    &:hover {
+        .boton-ver-mas{
+        outline: 1px solid $color-fuente-claro;
+        outline-offset: -4px;
+        outline-style: dotted;
+        }
+        .gif-sugerencia{
+            outline: 1px solid $color-fuente-claro;
+            outline-offset: -1px;
+            outline-style: dotted;
+        }
+    }
+}
+.div-titulo-gif{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 280px;
+    height: 24px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    z-index: 2;
+    p{
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        font-family: $fuente;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        font-weight: bold;
+        }
+    .boton-x{
+        position: relative;
+        top: 4px;
+        left: 260px;
+    }
+    body.modoClaro &{
+        background-image: $degradado-claro;
+    }
+    body.modoOscuro &{
+        background-image: $degradado-dark
+    }
+}
+    
+.texto-tendencias{
+    position: relative;
+    width: 1200px;
+    height: 32px;
+    top: 200px;
+    left: 100px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    p{
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        font-family: $fuente;
+        font-size: 14px;
+        color: #110038;
+        letter-spacing: 0;
+    }
+}
+.grid-tendencias{
+    position: relative;
+    top: 220px;
+    left: 92px;
+    width: 1200px;
+    height: 950px;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 298px 298px 298px 298px;
+    grid-auto-flow: row dense;
+    .div-tendencia{
+        display: inline-block;
+        height: 304px;
+        width: fit-content;
+        outline: 4px;
+        outline-offset: -4px;
+        outline-color: #FFF4FD; 
+        overflow: hidden;  
+        img{
+            width: 100%;
+        }
+        .div-hashtags{
+            display: none;
+            position: relative;
+            top: -24px;
+            left: 1%;
+            height: 24px;
+            width: 98%;
+            background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+            z-index: 2;
+            p{
+                font-family: $fuente;
+                font-size: 14px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: left;
+            }
+            body.modoClaro &{
+                background-image: $degradado-claro;
+            }
+            body.modoOscuro &{
+                background-image: $degradado-dark
+            }
+        }
+        &:hover{
+            outline-color: #E6E6E6;
+            outline-style: solid;
+            .div-hashtags{
+                display: block;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graba tu Gif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/stylesGrabar.css">
+    
+</head>
+<body>
+    <header class="header">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <a class="flecha" href="/index.html">
+    <img  src="/images/arrow.svg" alt="flecha-volver">
+    </a>
+    <a href="/index.html">
+        <img class="logo" id="logo" src="/images/gifOF_logo.png" alt="logo-gifOs">
+    </a>
+    <div id="create-box" class="create-box">
+        <div class="titulo-crear">
+            <p>Crear Guifos</p>
+        </div>
+        <img class="imagen-ventana" src="/images/window-img.png" alt="window">
+        <div class="texto-crear">
+            <h2>Aquí podrás crear tus propios guifos</h2>
+            <p>Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                <br>
+                <br><b>1)</b> &nbsp;Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                <br>
+                <br><b>2)</b> &nbsp;Capturar tu momento guifo
+                <br>
+                <br><b>3)</b> &nbsp;Revisar el momento
+                <br>
+                <br><b>4)</b> &nbsp;Listo para subir y compartir!
+                <br>
+                <br> ¿Quieres comenzar a crear tu <b> guifo </b>ahora?
+            </p>
+        </div>
+        <a href="/index.html">
+            <div class="boton-cancelar">
+                <p>Cancelar</p>
+            </div>
+        </a>
+        <div class="boton-comenzar">
+            <p>Comenzar</p>
+        </div>
+    </div>
+    <div id="video-box" class="video-box">
+        <div class="titulo-cuadro-video">
+            <p>Un Chequeo Antes de Empezar</p>
+            <a href="/grabarGifOs.html">
+                <img class="btn-x" src="/images/button3.svg" alt="boton-cerrar">
+            </a>
+            </div>
+        <div id="viewport" class="viewport">
+            <video id="live-video" class="live-video" autoplay width="832"></video>
+        </div>
+        <div id="btn-capture" class="btn-capture">
+            <div class="div-camera">
+                <img src="/images/camera.svg" alt="camara">
+            </div>
+            <div class="div-capture">
+                <p>Capturar</p>
+            </div>
+        </div>
+        <div id="btn-capture-clicked" class="btn-capture-clicked">
+            <div class="div-recording">
+                <img src="/images/recording.svg" alt="grabando">
+            </div>
+            <div class="div-listo">
+                <p>Listo</p>
+            </div>
+        </div>
+        <div class="btn-repetir">
+            <p>Repetir Captura</p>
+        </div>
+        <div class="btn-subir">
+            <p>Subir Guifo</p>
+        </div>
+    </div>
+    <div id="cartel-exito" class="cartel-exito">
+        <div class="titulo-exito">
+            <p>Guifo Subido Con Éxito</p>
+            <a href="/grabarGifOs.html">
+                <img  src="/images/button3.svg" alt="boton-cerrar">
+            </a>
+        </div>
+        <h2>Guifo creado con éxito</h2>
+        
+        <div id="gif-exitoso" class="resultado-guifo"></div>
+        <div class="boton-copiar-url">
+            <p>Copiar Enlace Guifo</p>
+        </div>
+        <div class="boton-descargar">
+            <p>Descargar Guifo</p>
+        </div>
+        <div class="boton-listo">
+            <p>Listo</p> 
+        </div>
+    </div>
+    <div id="title-mis-guifos" class="title-mis-guifos">
+        <p>Mis Guifos</p>
+    </div>
+    <div class="mis-guifos"></div>
+    <div class="grid-mis-guifos">
+        <div id="cartel-oops" class="cartel-oops">
+            <p>Oops parece que no has subido ningun Guifo todavia, haz click en "Crear Guifos" para comenzar.</p>
+        </div>
+    </div>
+    
+    <div id="subiendo" class="div-subiendo">
+        <img src="/images/globe_img.png" alt="globo-terraqueo">
+        <h3>Estamos subiendo tu guifo…</h3>
+        <p>Tiempo restante: <s>38 años</s>  algunos minutos</p>
+    </div>
+    <div class="btn-cancelar">
+        <p>Cancelar</p>
+    </div>
+   
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="scriptGrabarGifOs.js"></script>
+</body>
+</html>

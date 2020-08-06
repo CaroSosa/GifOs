@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    &.modoClaro{
+    background-color: #FFF4FD;
+    transition: .3s ease all;
+    }
+    &.modoOscuro{
+        background-color: #110038;
+    }
+}
+header{
+    width: 1438px;
+    height: 23px;
+    box-shadow: 0 1px 0 0 $color-fuente-claro;
+    background-image: $degradado-claro;
+    p{
+        position: absolute;
+        top: 4px;
+        left: 7px;
+        font-family: $fuente;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+    body.modoOscuro &{
+        background-image: $degradado-dark
+    }
+}
+.logo-claro{
+    position: relative;
+    top: 39px;
+    left: 91px;
+}
+.boton-crear{
+    position: absolute;
+    top: 68px;
+    left: 879px;
+    height: 36px;
+    width: 144px;
+    background: #F7C9F3;
+    border: 1px solid $color-fuente-claro;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    p{
+        position: absolute;
+        top: 9px;
+        left: 28.5px;
+        font-family: $fuente;
+        color: $color-fuente-claro;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 18px;
+        }
+    &:hover{
+        background-color:#E6BBE2 ;
+        outline: 1px solid $color-fuente-claro;
+        outline-offset: -5px;
+        outline-style: dotted;
+    }
+    body.modoOscuro &{
+        background: #EE3EFE;
+        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+        P{
+            color: #FFFFFF;
+        }
+        &:hover{
+            background: #CE36DB;
+        }
+    }
+}
+    
+.menu-estilos{
+    position: relative;
+    display: none;
+    width: 168px;
+    height: 102px;
+    top: 28px;
+    left: 1034px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    
+    .sailor-day{
+        position: relative;
+        width: 150px;
+        height: 36px;
+        top: 15px;
+        left: 10px;
+        background: #FFF4FD;
+        border: 1px solid #CCA6C9;
+        box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;    
+        p{  
+            position: absolute;
+            font-family: $fuente;
+            font-size: 16px;
+            text-align: left;
+            top: 7px;
+            left: 16px;
+            color: $color-fuente-claro;
+            letter-spacing: 0;
+            line-height: 22px;
+            }
+        }
+    .sailor-night{
+        position: absolute;
+        width: 150px;
+        height: 36px;
+        top: 56px;
+        left: 10px;
+        background: #F0F0F0;
+        border: 1px solid #808080;
+        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;  
+          
+        p{  
+            position: absolute;
+            font-family: $fuente;
+            font-size: 16px;
+            text-align: left;
+            top: 7px;
+            left: 16px;
+            color: $color-fuente-claro;
+            letter-spacing: 0;
+            line-height: 22px;
+            &::before{
+                content: "_";
+                position: absolute;
+                top: 2px;
+                margin-left: 1px;
+            }
+        }
+        
+    }
+}
+.boton-elegir-tema{
+    position: absolute;
+    top: 68px;
+    left: 1039px;
+    height: 38px;
+    width: 167px;
+    background: #F7C9F3;
+    .texto-tema{
+        position: absolute;
+        width: 131px;
+        height: 36px;
+        top: 0;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+            p{  
+            position: absolute;
+            top: 9px;
+            left: 22px;
+            font-family: $fuente;
+            font-size: 16px;
+            color: $color-fuente-claro;
+            letter-spacing: 0;
+            line-height: 18px;
+        }
+    }
+    .boton-tema-anexo{
+        position: absolute;
+        top: 0;
+        left: 131px;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        img{
+            position: absolute;
+            top: 13px;
+            left: 13px;
+        }
+    }
+    &:hover{
+        background-color:#E6BBE2;
+        .texto-tema, .boton-tema-anexo{
+            outline: 1px solid $color-fuente-claro;
+            outline-offset: -5px;
+            outline-style: dotted;
+        }
+    }
+    body.modoOscuro &{
+        background: #EE3EFE;
+        box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+        P{
+            color: #FFFFFF;
+        }
+        &:hover{
+            background: #CE36DB;
+        }
+    }    
+}   
+.mis-guifos{
+    position: absolute;
+    top: 68px;
+    left: 1223.5px;
+    width: 95px;
+    height: 32px;
+    border: 1px;
+    border-color: $color-fuente-claro;
+    border-style: none;
+    p{
+        position: absolute;
+        top: 7.5px;
+        text-decoration: none;
+        font-family: $fuente;
+        font-size: 16px;
+        color: $color-fuente-claro;
+        letter-spacing: 0;
+        line-height: 18px;
+    }
+    &::before{
+        content: "_";
+        position: absolute;
+        top: 7.5px;
+        margin-left: 1px;
+    }
+    &:hover{
+        border-style: dotted;
+    }
+    &:active{
+        border-style: none;
+        a{
+            color: #1100386b;
+        }
+    }
+    body.modoOscuro &{
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        p{
+            color: #FFFFFF;
+        }
+        &:active{
+            border-style: none;
+            a{
+                color: #fd97db6b;
+            }
+        }
+    } 
+}
+.menu-estilos-show{
+    position: relative;
+    width: 168px;
+    height: 102px;
+    top: 31px;
+    left: 1038px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    body.modoOscuro &{
+        background: #B4B4B4;
+        box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    }
+   
+    .sailor-day{
+        position: relative;
+        width: 150px;
+        height: 36px;
+        top: 15px;
+        left: 10px;
+        background: #FFF4FD;
+        border: 1px solid #CCA6C9;
+        box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;    
+        body.modoOscuro &{
+            background: #CCCCCC;
+            border: 1px solid #808080;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+            p{
+                color: $color-fuente-claro;
+            }
+        }   
+        p{  
+            position: absolute;
+            font-family: $fuente;
+            font-size: 16px;
+            text-align: left;
+            top: 7px;
+            left: 16px;
+            color: $color-fuente-claro;
+            letter-spacing: 0;
+            line-height: 22px;
+            }
+        }
+    .sailor-night{
+        position: absolute;
+        width: 150px;
+        height: 36px;
+        top: 56px;
+        left: 10px;
+        background: #F0F0F0;
+        border: 1px solid #808080;
+        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;   
+        body.modoOscuro &{
+            background: #2E32FB;
+            border: 1px solid #33358F;
+            box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+            p{
+                color: #FFFFFF;
+            }
+        }   
+        p{  
+            position: absolute;
+            font-family: $fuente;
+            font-size: 16px;
+            text-align: left;
+            top: 7px;
+            left: 16px;
+            color: $color-fuente-claro;
+            letter-spacing: 0;
+            line-height: 22px;
+            &::before{
+                content: "_";
+                position: absolute;
+                top: 2px;
+                margin-left: 1px;
+            }
+        }
+    }
+}
+.titulo-mis-guifos{
+    display: none;
+    position: relative;
+    top: 74px;
+    width: 1200px;
+    height: 32px;
+    left: 100px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    p{  
+        position: absolute;
+        top:7px;
+        left:7px;
+        font-family: $fuente;
+        font-size: 14px;
+        color: #110038;
+        letter-spacing: 0;
+    }
+}
+.grid-mis-guifos{
+    position: relative;
+    top: 84px;
+    left: 100px;
+    width: 1200px;
+    height: 1200px;
+    display: none;
+    img{
+        z-index: 2;
+        margin: 8px;
+    }
+    
+}
+.cartel-oops{
+    display: none;
+    position: absolute;
+    top:300px;
+    left: 300px;
+    width: 800px;
+    margin: auto;
+    p{
+        font-family: $fuente;
+        font-size: 26px;
+        color: $color-fuente-claro;
+        font-weight: bold;
+        text-align: center;
+        body.modoOscuro &{
+            color: #FFFFFF;
+        }
+    }
+}
