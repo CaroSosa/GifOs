@@ -4,11 +4,13 @@
   margin: 0;
   border: 0; }
 
-body.modoClaro {
-  background-color: #FFF4FD;
-  transition: .3s ease all; }
-body.modoOscuro {
-  background-color: #110038; }
+body {
+  background-color: #FFF4FD; }
+  body.modoClaro {
+    background-color: #FFF4FD;
+    transition: .3s ease all; }
+  body.modoOscuro {
+    background-color: #110038; }
 
 header {
   width: 1438px;
@@ -654,20 +656,23 @@ header {
   top: 391px;
   display: none;
   width: 1220px;
-  height: 1025px;
+  height: fit-content;
   left: 92px;
   background: #FFF4FD;
   z-index: 2;
   overflow: hidden;
-  text-align: center; }
+  grid-gap: 10px;
+  grid-template-columns: 298px 298px 298px 298px;
+  grid-auto-flow: row dense; }
   .grid-resultados .div-resultado {
     display: inline-block;
-    height: 238px;
-    margin: 8px;
+    height: 298px;
     outline: 4px;
     outline-offset: -4px;
     outline-color: #FFF4FD;
     overflow: hidden; }
+    .grid-resultados .div-resultado img {
+      width: 100%; }
     .grid-resultados .div-resultado .hashtags-resultado {
       display: none;
       position: relative;

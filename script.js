@@ -125,7 +125,7 @@ function buscarGif (){
 };
 function mostrarResultados (data){
     let gridResultados = document.getElementsByClassName("grid-resultados")[0]
-    gridResultados.style.setProperty("display", "block")
+    gridResultados.style.setProperty("display", "grid")
     for(i = 0; i < data.length; i++){
         let gifResultado = document.createElement("img");
         let divResultado = document.createElement("div");
@@ -140,8 +140,14 @@ function mostrarResultados (data){
         divHashtags.setAttribute("class", "hashtags-resultado");
         tituloGif.innerText = "#" + tituloGifFinal;
         gifResultado.setAttribute("src", data[i].images['fixed_height'].url);
-        gifResultado.style.setProperty("height", "238px");
-        
+        gifResultado.style.setProperty("height", "298px");
+        if(gifResultado.width / gifResultado.height >= 1.6){
+            urlGif.style.setProperty("grid-column", "auto / span 2")
+            divResultado.style.setProperty("width", "596px");
+
+        }else{
+            divResultado.style.setProperty("width", "298px");
+        }
         divHashtags.appendChild(tituloGif)
         divResultado.appendChild(gifResultado);
         urlGif.appendChild(divResultado)
