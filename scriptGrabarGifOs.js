@@ -198,4 +198,7 @@ botonListo.addEventListener("click", ()=>{
 botonListo.addEventListener("click", ()=>{
     gridMisGuifos.innerHTML = "";
 })
-botonListo.addEventListener("click", mostrarMisGuifos);
+botonListo.addEventListener("click", ()=>{
+    misGifs = JSON.parse(localStorage.getItem("misGifs"));
+    misGifs.forEach(hacerFetchMisGuifos);
+});
