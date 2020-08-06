@@ -140,6 +140,7 @@ function mostrarResultados (data){
         divHashtags.setAttribute("class", "hashtags-resultado");
         tituloGif.innerText = "#" + tituloGifFinal;
         gifResultado.setAttribute("src", data[i].images['fixed_height'].url);
+        gifResultado.setAttribute("class", "gif-resultado");
         gifResultado.style.setProperty("height", "298px");
         if(gifResultado.width / gifResultado.height >= 1.6){
             urlGif.style.setProperty("grid-column", "auto / span 2")

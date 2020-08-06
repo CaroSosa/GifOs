@@ -700,7 +700,7 @@ header {
   body.modoOscuro .grid-resultados {
     background: #110038; }
   .grid-resultados .gif-resultado {
-    margin: 8px; }
+    width: 100%; }
 
 .contenedor-busqueda-previa {
   position: absolute;
