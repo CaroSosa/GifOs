@@ -100,7 +100,7 @@ async function subirGif(){
     })
     const responseParseado = await response.json();
     let gifId = responseParseado.data.id;
-    if(localStorage.length == 1){
+    if(localStorage.getItem("misGifs") == null){
         misGifs.push(gifId);
         localStorage.setItem("misGifs", JSON.stringify(misGifs));
     }else{
