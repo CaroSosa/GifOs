@@ -68,7 +68,6 @@ function hacerFetchMisGuifos (element){
     })
         .then((bodyEnJson)=>{
             displayMisGuifos(bodyEnJson.data);
-            console.log(bodyEnJson)
         })
 }
 function displayMisGuifos(data){
@@ -273,8 +272,7 @@ function funcionTendencias(data){
         tituloGif.innerText = "#" + tituloGifFinal;
         imagenTendencia.setAttribute("src", data[i].images['fixed_height'].url);
         imagenTendencia.style.setProperty("height", "298px");
-        console.log( data)
-        if(data[i].images['fixed_height'].width/ data[i].images['fixed_height'].height > 1.6){
+        if(data[i].images['fixed_height'].width/ data[i].images['fixed_height'].height > 1.8){
             urlGif.style.setProperty("grid-column", "auto / span 2")
             divTendencia.style.setProperty("width", "596px");
 
