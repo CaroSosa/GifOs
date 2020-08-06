@@ -14,6 +14,14 @@ let logo = document.getElementsByClassName("logo-claro")[0];
 let botonModoClaro = document.getElementById("sailor-day");
 let botonModoOscuro = document.getElementById("sailor-night");
 let lupa = document.getElementById("lupa");
+let cuadroDeBusqueda = document.getElementsByClassName("cuadro-buscar")[0];
+let gridSugerencias = document.getElementsByClassName("grid-sugerencias")[0]
+let tituloSugerencias = document.getElementsByClassName("sugerencias")[0];
+let gridTendencias = document.getElementById("grid-tendencias");
+let tituloTendencias = document.getElementsByClassName("texto-tendencias")[0];
+let tituloMisGuifos = document.getElementsByClassName("titulo-mis-guifos")[0];
+let gridResultados = document.getElementsByClassName("grid-resultados")[0];
+let contenedorBusquedaPrevia = document.getElementsByClassName("contenedor-busqueda-previa")[0];
 const POSIBLES_RESULTADOS = document.getElementsByClassName("posibles-result")[0];
 let botonPosiblesResultados1 = POSIBLES_RESULTADOS.getElementsByTagName("button")[0];
 let botonPosiblesResultados2 = POSIBLES_RESULTADOS.getElementsByTagName("button")[1];
@@ -124,7 +132,6 @@ function buscarGif (){
         })
 };
 function mostrarResultados (data){
-    let gridResultados = document.getElementsByClassName("grid-resultados")[0]
     gridResultados.style.setProperty("display", "grid")
     for(i = 0; i < data.length; i++){
         let gifResultado = document.createElement("img");
@@ -153,7 +160,7 @@ function mostrarResultados (data){
         divResultado.appendChild(gifResultado);
         urlGif.appendChild(divResultado)
         divResultado.appendChild(divHashtags);
-        document.getElementsByClassName("grid-resultados")[0].appendChild(urlGif);
+        gridResultados.appendChild(urlGif);
     }
 }
 function mostrarResultadosNuevos (data){
@@ -174,7 +181,6 @@ function pushBusqueda (){
     })
     busquedaPrevia.addEventListener("click", buscarGif)
     busquedaPrevia.addEventListener("click", cambiarTitulo)
-    let contenedorBusquedaPrevia = document.getElementsByClassName("contenedor-busqueda-previa")[0];
     contenedorBusquedaPrevia.appendChild(busquedaPrevia);
     document.body.appendChild(contenedorBusquedaPrevia)
 };
@@ -312,7 +318,6 @@ botonModoClaro.addEventListener("click", ()=>{
 });
 botonModoClaro.addEventListener("click", guardarThemeEnLocalStorage);
 BOTON_ESTILOS.addEventListener("click", FUNCION_MENU_SHOW);
-botonMisGuifos.addEventListener("click", mostrarMisGuifos);
 botonPosiblesResultados1.addEventListener("click", ()=>{
     stringUser = botonPosiblesResultados1.innerText;
 })
@@ -352,17 +357,15 @@ botonPosiblesResultados3.addEventListener("click", buscarGif);
 botonPosiblesResultados3.addEventListener("click", cambiarTitulo);
 botonPosiblesResultados3.addEventListener("click", ocultarSugerencias);
 botonMisGuifos.addEventListener("click", ()=>{
-    let cuadroDeBusqueda = document.getElementsByClassName("cuadro-buscar")[0];
     cuadroDeBusqueda.style.setProperty("display", "none");
-    let gridSugerencias = document.getElementsByClassName("grid-sugerencias")[0]
     gridSugerencias.style.setProperty("display", "none");
-    let tituloSugerencias = document.getElementsByClassName("sugerencias")[0];
     tituloSugerencias.style.setProperty("display", "none");
-    let gridTendencias = document.getElementById("grid-tendencias");
     gridTendencias.style.setProperty("display", "none");
-    let tituloTendencias = document.getElementsByClassName("texto-tendencias")[0];
     tituloTendencias.style.setProperty("display", "none");
-    let tituloMisGuifos = document.getElementsByClassName("titulo-mis-guifos")[0];
+    gridResultados.style.setProperty("display", "none");
     tituloMisGuifos.style.setProperty("display", "block");
     gridMisGuifos.style.setProperty("display", "block");
+    contenedorBusquedaPrevia.style.setProperty("display", "none");
+
 })
+botonMisGuifos.addEventListener("click", mostrarMisGuifos);
